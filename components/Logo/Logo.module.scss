@@ -1,0 +1,15 @@
+@import "../../styles/variables.module.scss";
+
+.logo {
+    font-weight: 900;
+    font-size: 2.25rem;
+    letter-spacing: 8px;
+    line-height: 3rem;
+    background-image: linear-gradient(180deg, $color-light-green 0%, $color-dark-blue 100%);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.scrolled {
+    background-image: linear-gradient(180deg, $color-green 0%, $color-light-green 20%, $color-tan 100%);   
+}

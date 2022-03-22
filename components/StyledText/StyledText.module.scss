@@ -1,0 +1,54 @@
+@import "../../styles/variables.module.scss";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+.text {
+    padding: 9px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.25rem;
+}
+
+.left {
+    justify-content: left;
+    border-left: 1px solid $color-tan;
+    color: $color-tan;
+
+    &.top {
+        border-top: 1px solid $color-tan;
+        border-left: none;
+    }
+
+    &.bottom {
+        border-bottom: 1px solid $color-tan;
+    }
+
+    span {
+        float: left;
+    }
+}
+
+.right {
+    border-right: 1px solid $color-tan;
+    color: $color-tan;
+
+    &.top {
+        border-top: 1px solid $color-tan;
+    }
+
+    &.bottom {
+        border-bottom: 1px solid $color-tan;
+        border-right: none;
+    }
+
+    span {
+        float: right;
+    }
+}
+
+
