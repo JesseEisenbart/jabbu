@@ -18,7 +18,7 @@ const Intro = () => {
                     you feel `
                 }<span className={styles.highlightedText}>alive</span>.
             </h1>
-                <p className={styles.about}>Jake <i>"Jabbu"</i> Coyle creates music that gets people talking, moving, and feeling.</p>
+                <p className={styles.about}>Jake <i>&quot;Jabbu&quot;</i> Coyle creates music that gets people talking, moving, and feeling.</p>
                 <p className={styles.contact}>Want to work together?&nbsp; <Link href="/contact"><span className={styles.getInTouch}>Get in touch&nbsp;<BsArrowRight className={styles.arrow}/></span></Link></p>
             </div>  
             <StyledText text={"© "+date} horizontal="left" vertical="bottom"/>
