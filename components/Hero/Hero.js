@@ -24,7 +24,7 @@ const Hero = () => {
             {/* <StyledText text={"EMOTION"} horizontal="right" vertical="top"/> */}
             <div className={styles.center}>
                 <div className={styles.albumContainer}>
-                    <Image className={styles.album} alt="The Quiet Respite album cover" width={500} height={500} title="The Quiet Respite" src="https://i1.sndcdn.com/artworks-rRYknG0v9PT3OiRx-rp2QVQ-t500x500.jpg"/>
+                    <Image className={styles.album} alt="The Quiet Respite" width={270} height={270} title="The Quiet Respite" src="/albumCover.jpg"/>
                     <span className={styles.albumText}>The Quiet Respite, listen now</span>
                 </div>
             </div>
