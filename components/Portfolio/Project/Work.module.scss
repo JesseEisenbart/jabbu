@@ -9,11 +9,16 @@
 // }
 
 .projectTitle {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     text-transform: uppercase;
     color: $color-blue;
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
 }
 
 .projects {
@@ -44,8 +49,7 @@
 .work {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;   
     text-align: center;
 }
 
@@ -60,12 +64,17 @@
 
 .workTitle {
     letter-spacing: 2px;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.6rem;
     text-transform: uppercase;
     padding-bottom: 2px;
     color: $color-light-blue;
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 1.9rem;
+        line-height: 1.6rem;
+    }
 }
 
 

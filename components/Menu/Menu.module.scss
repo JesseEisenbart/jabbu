@@ -10,7 +10,6 @@
     display: none;
     color: $color-tan;
 
-
     @media (min-width: $breakpoint-desktop-small) {
         display: flex;
         flex-direction: row;
@@ -29,16 +28,38 @@
 
 .link {
     font-weight: inherit;
-    transition: transform 0.5s ease; 
-    padding: 5px 5px;
+    padding: 7px 7px;
 
 
     &:hover , &:focus {         
         cursor: pointer;
-        text-decoration: underline;
     }
 }
 
 .selected {
     font-weight: 900;
+}
+
+
+.textLink {
+    display: inline-block;
+    position: relative;
+}
+  
+.textLink:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $color-tan;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.textLink:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }

@@ -30,6 +30,12 @@ const About = () => {
             desc: "",
             link: "https://www.returnthegame.com/",
         },
+        {
+            name: "Garden Defender",
+            date: "March 2022",
+            desc: "Created for the #NoticeMe Game Jam",
+            link: "https://deadunicorngames.itch.io/garden-defender",
+        }
 
     ]
     const quiteGoodProjects = [
@@ -71,8 +77,16 @@ const About = () => {
     const inFocusFilmSchoolProjects = [
         {
             name: "MAY",
-            date: "Directed by: Chenneth Weeraratne",
-            desc: "",
+            date: "",
+            desc: "Directed by: Chenneth Weeraratne",
+            link: "",
+        },
+    ]
+    const independentFilm = [
+        {
+            name: "The Overlook",
+            date: "September 2021",
+            desc: "Directed by Azael Buenos",
             link: "",
         },
     ]
@@ -80,7 +94,7 @@ const About = () => {
         {
             name: "",
             date: "",
-            desc: " Conceptualized and executively produced the full album “The Quiet Respite”.",
+            desc: "Conceptualized and executively produced the full album “The Quiet Respite”.",
             link: "",
         },
         {
@@ -210,14 +224,15 @@ const About = () => {
                 <ul className={styles.portfolioList}><Work title={"Dead Unicorn Game Studios"} desc={"Composed the soundtracks / sound design for:"} date={"2020 - Present"} list={deadUniocrnProjects}></Work></ul>
                 <ul className={styles.portfolioList}><Work title={"Quite Good Game Studios"} desc={"Composed the soundtrack and created SFX for:"} date={"2020 - Present"} list={quiteGoodProjects}></Work></ul>
                 <ul className={styles.portfolioList}><Work title={"Synesthesia Media"} desc={"Contracted to produce music inspired by the book ‘The Outlaw Ocean’ - Written By Ian Urbina."} date={"2020 - 2021 "} list={synesthesiaProjects}></Work></ul>
-                <ul className={styles.portfolioList}><Work title={"Aquatic Group Graphics / DCU NextGen"} desc={"Contracted to produce music for an animation for DCU NextGen, a nonprofit teaching financialliteracy to children."} date={"2020 - 2021 "} list={aquaticGroupGraphicsProjects}></Work></ul>
-                <ul className={styles.portfolioList}><Work title={"InFocus Film School"} desc={"Composed the score for a student film"} date={"2020 - 2021 "} list={inFocusFilmSchoolProjects}></Work></ul>
+                <ul className={styles.portfolioList}><Work title={"Aquatic Group Graphics / DCU NextGen"} desc={"Contracted to produce music for an animation for DCU NextGen, a nonprofit teaching financial literacy to children."} date={"2020 - 2021"} list={aquaticGroupGraphicsProjects}></Work></ul>
+                <ul className={styles.portfolioList}><Work title={"InFocus Film School"} desc={"Composed the score for a student film"} date={"2020 - 2021"} list={inFocusFilmSchoolProjects}></Work></ul>
+                <ul className={styles.portfolioList}><Work title={"Independent FIlm"} desc={"Composed the score for an indie short film and the trailer"} date={"2021"} list={independentFilm}></Work></ul>
             </div>
         </section>
         <div className={styles.banner} >
             <h1>MUSIC PRODUCTION</h1>
             <p className={styles.about}>
-                Along with self-released music, Jake has created music for labels all around the globe under the name ‘Jabbu’; everything from full length albums, to tracks featured on large compilations.
+                Along with self-released music, Jake has created music for labels all around the globe under the name ‘Jabbu’, everything from full length albums, to tracks featured on large compilations.
             </p>
         </div>  
         <section className={styles.container}>

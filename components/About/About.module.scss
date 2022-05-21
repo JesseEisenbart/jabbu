@@ -2,34 +2,49 @@
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+    }
 }
 
 .split {
     padding-top: 100px;
     width: 50%;
-    height: 100vh;
+    min-height: 35vh;
+
+    @media (min-width: $breakpoint-desktop) {
+        height: 100vh;
+    }
 }
 
 .splitRight {
-    width: 45%;
+    width: 100%;
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 50%;
+    }
 }
 
 .splitLeft {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55%;
+    width: 100%;
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }  
 }
 
 .content {
-    margin-left: 90px;
-    margin-right: 180px;
+    margin-left: 30px;
     font-weight: 400;
 
     .header {
        color: $color-dark-blue;
-       font-size: 1.7rem;
+       font-size: 2rem;
        font-weight: 700;
     }
 
@@ -42,7 +57,7 @@
     }
 
     section {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .skills {
@@ -55,13 +70,20 @@
     .skill {
         color: $color-blue;
     }
+
+    @media (min-width: $breakpoint-desktop) {
+        margin-left: 90px;
+        margin-right: 180px;
+    }
 }
 
 .feature {
     background: rgb(6,36,47);
-    background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background: rgba(0,0,0,0.1), url("/headshot2.JPG");
+    background:linear-gradient(0deg, rgba(29, 29, 29, 0.4), rgba(36, 36, 36, 0.1)), url("/headshot2.JPG");
     background-size: cover;
     background-position-y: 40%;
+    background-position-x: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

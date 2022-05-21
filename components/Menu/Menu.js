@@ -15,10 +15,10 @@ const Menu = ({ isOpen }) => {
     
     return (
         <ul className={cx(styles.list, isOpen ? styles.open : "")}>
-            <li className={cx(styles.link, asPath == "/" ? styles.selected : "")}><Link href="/">HOME</Link></li>
-            <li className={cx(styles.link, asPath == "/about" ? styles.selected : "")}><Link href="/about">ABOUT</Link></li>
-            <li className={cx(styles.link, asPath == "/portfolio" ? styles.selected : "")}><Link href="/portfolio">PORTFOLIO</Link></li>
-            <li className={cx(styles.link, asPath == "/contact" ? styles.selected : "")}><Link href="/contact">CONTACT</Link></li>
+            <li className={cx(styles.link, styles.textLink, asPath == "/" ? styles.selected : "")}><Link href="/">HOME</Link></li>
+            <li className={cx(styles.link, styles.textLink, asPath == "/about" ? styles.selected : "")}><Link href="/about">ABOUT</Link></li>
+            <li className={cx(styles.link, styles.textLink, asPath == "/portfolio" ? styles.selected : "")}><Link href="/portfolio">PORTFOLIO</Link></li>
+            <li className={cx(styles.link, styles.textLink, asPath == "/contact" ? styles.selected : "")}><Link href="/contact">CONTACT</Link></li>
             <li className={cx(styles.link, )}><a href="https://open.spotify.com/artist/2z05oYAAyzrRNbWrNFSrDt?si=sHqgXSlJQ9iCODMXP035SA" rel="noreferrer" target="blank"><FaSpotify/></a></li>
             <li className={cx(styles.link, )}><a href="https://jakeandbakebeats.bandcamp.com/" rel="noreferrer" target="blank"><FaBandcamp/></a></li>
             <li className={cx(styles.link, )}><a href="https://www.instagram.com/jabbu_jake/" rel="noreferrer" target="blank"><FaInstagram/></a></li>

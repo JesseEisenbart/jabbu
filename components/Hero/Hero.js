@@ -11,12 +11,12 @@ const Hero = () => {
         
         <div className={cx(styles.split, styles.titleContainer)}>
             <h1 className={styles.title}>{
-                    `Music
-                    that makes 
-                    you feel `
-                }<span className={styles.highlightedText}>alive</span>.
+                    `Audio
+                    that transports  
+                    you to new `
+                }<span className={styles.highlightedText}>realms</span>.
             </h1>
-            <p className={styles.about}>Jake <i>&quot;Jabbu&quot;</i> Coyle creates music that gets people talking, moving, and feeling.</p>
+            <p className={styles.about}>Jake <i>&quot;Jabbu&quot;</i> Coyle creates sound and music that gets people talking, moving, and feeling.</p>
             <p className={styles.contact}>Want to work together?&nbsp; <Link href="/contact"><span className={styles.getInTouch}>Get in touch&nbsp;<BsArrowRight className={styles.arrow}/></span></Link></p>
         </div>
 
